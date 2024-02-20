@@ -93,7 +93,7 @@ class FBetaScore(tf.keras.metrics.Metric):
         self,
         num_classes: FloatTensorLike,
         average: Optional[str] = None,
-        beta: FloatTensorLike = 1.0,
+        beta: FloatTensorLike = 5.0,
         threshold: Optional[FloatTensorLike] = None,
         name: str = "fbeta_score",
         dtype: AcceptableDTypes = None,
